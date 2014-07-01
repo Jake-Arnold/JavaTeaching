@@ -5,11 +5,12 @@
  * <p/>
  * From another class, however, it cannot be directly accessed as StaticClass but will need to be accessed as OuterClass.StaticClass.
  * <p/>
- * Only nested classes can be static.
+ * Only nested classes can be static and they cannot access the methods or variables of the outer class that they are nested within unless they are static.
  * <p/>
  * Created by Jake on 6/27/14.
  */
 public class OuterClass {
+
 
     public static class StaticClass {
 
@@ -17,7 +18,6 @@ public class OuterClass {
             System.out.println(str);
         }
     }
-
 
     public static void main(String[] args) {
         //This is how you create an instance of the outerclass.
